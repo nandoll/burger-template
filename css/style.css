@@ -1,8 +1,21 @@
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/Graphik-Regular.eot");
+  src: url("../fonts/Graphik-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/Graphik-bold.eot");
+  src: url("../fonts/Graphik-bold.woff") format("woff");
+  font-weight: bold;
+}
+
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Graphik", Arial, sans-serif;
 }
+
 .bg-dark {
   background-color: black;
   color: white;
@@ -95,15 +108,16 @@ body {
   height: 80vh;
 }
 .title {
-  font-size: 4rem;
+  font-size: 74px;
+  letter-spacing: 0.2px;
+  font-weight: bold;
   margin: 0;
   padding: 0;
   text-align: center;
-  text-transform: uppercase;
 }
 .subtitle {
-  color: #00bfff;
-  font-size: 3rem;
+  font-weight: regular;
+  font-size: 28px;
 }
 .cta-btn {
   background-color: white;
