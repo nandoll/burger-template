@@ -15,16 +15,16 @@
     <title>Barra Cervecera</title>
 </head>
 
-<body class="bg-dark">
+<body class="bg-dark ">
     <section class="main-top fixed">
         <nav class="header">
             <div class="menu">
                 <ul class="navigation">
-                    <li class="navigation-item"><a href="#">Inicio</a></li>
-                    <li class="navigation-item"><a href="#">Reservar</a></li>
-                    <li class="navigation-item"><a href="#">Carta</a></li>
-                    <li class="navigation-item"><a href="#">Eventos</a></li>
-                    <li class="navigation-item"><a href="#">Nosotros</a></li>
+                    <li class="navigation-item"><a href="#inicio">Inicio</a></li>
+                    <li class="navigation-item"><a href="#reservar">Reservar</a></li>
+                    <li class="navigation-item"><a href="#carta">Carta</a></li>
+                    <li class="navigation-item"><a href="#eventos">Eventos</a></li>
+                    <li class="navigation-item"><a href="#nosotros">Nosotros</a></li>
                 </ul>
             </div>
             <div class="logo">
@@ -36,7 +36,7 @@
         </nav>
     </section>
 
-    <section class="hero-top">
+    <section class="hero-top" id="inicio">
         <div class="hero-background">
             <svg width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
                 <path d="M0 0 L50 90 L100 0 V100 H0" />
@@ -47,7 +47,7 @@
             <h1 class="title">Bienvenidos a <br />Barra Bar</h1>
             <div class="subtitle mt-m mb-m">Restaurant Bar & Beer Garden</div>
             <div class="cta-btn bg-secondary mt-m mb-m">
-                <a href="#">Reservar</a>
+                <a href="#reservar">Reservar</a>
             </div>
         </div>
     </section>
@@ -124,7 +124,7 @@
                     a experimentar junto a Barra Bar.
                 </p>
                 <div class="cta-btn bg-secondary mt-m mb-m">
-                    <a href="#">Ver Carta</a>
+                    <a href="#carta">Ver Carta</a>
                 </div>
             </div>
             <div class="img-carta"></div>
@@ -146,14 +146,14 @@
                     en los matices de noche.
                 </p>
                 <div class="cta-btn bg-green mt-m mb-m">
-                    <a href="#">Reservar</a>
+                    <a href="#reservar">Reservar</a>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <section class="propuesta mt-m mb-m">
+    <section class="propuesta mt-m mb-m" id="nosotros">
         <div class="container p center ">
             <h1 class="title-regular">Nuestra Propuesta</h1>
             <p class="subtitle mt-m mb-m">Somos un equipo joven con pasión por las cosas bien hechas, nuestra prioridad
@@ -209,7 +209,7 @@
         </div>
     </section>
 
-    <section class="propuesta mt-m mb-m">
+    <section class="propuesta mt-m mb-m" id="eventos">
         <div class="container p center ">
             <h1 class="title-regular">Descuentos Exclusivos</h1>
             <p class="subtitle mt-m mb-m">Realizando tu reserva a través de nuestra web te beneficias con increíbles
@@ -237,13 +237,201 @@
                 <span class="text-blue">Aceptamos todos los medios de pago</span>
             </p>
 
-
-
             <div class="cta-btn bg-blue mt-m mb-m">
-                <a href="#">Reservar</a>
+                <a href="#reservar">Reservar</a>
             </div>
         </div>
     </section>
+
+    <section class="carta mt-m mb-m bg-light-blue" id="carta">
+        <div class="container p center ">
+            <h1 class="flex title-regular">Nuestra Carta</h1>
+            <p class="subtitle mt-m mb-m">Barra Bar logra fusionar la gastronomia creativa con un diseño disruptivo.</p>
+            <div class="flex row gallery">
+                <div class="card bg-light rounded-card m-small m-top p w-3 center">
+                    <h2 class="title-small pt-s">Nuestras entradas</h2>
+                    <span class="subtitle-small text-gray">De la granja, del mar, de la tierra</span>
+
+                    <div class="flex row p center pricing">
+                        <div class="number title-big">9</div>
+                        <div class=" flex column center from">
+                            <span class="text-gray bold">S/.</span>
+                            <span>Desde</span>
+                        </div>
+                    </div>
+
+                    <div class="elements">
+                        <ul class="text-center">
+                            <li class="list">Bastones de muzzarella</li>
+                            <li class="list">Papas Cerveceras</li>
+                            <li class="list">Ravioles fritos</li>
+                            <li class="list">Croquetas de jamón y queso</li>
+                            <li class="list">Ensalada César</li>
+                        </ul>
+                    </div>
+
+                    <div class="cta-btn bg-blue mt-m mb-m">
+                        <a href="#">Ver más entradas</a>
+                    </div>
+                </div>
+
+                <div class="card bg-blue rounded-card m-small p w-3 center">
+                    <h2 class="title-small pt-s">Bebidas Principales</h2>
+                    <span class="subtitle-small">Happy Hours & After Office</span>
+
+                    <div class="flex row p center pricing">
+                        <div class="number title-big">12</div>
+                        <div class=" flex column center from">
+                            <span class="bold">S/.</span>
+                            <span>Desde</span>
+                        </div>
+                    </div>
+
+                    <div class="elements">
+                        <ul class="text-center">
+                            <li class="list">Campari & Tonic.</li>
+                            <li class="list">Cervezas Artesanales</li>
+                            <li class="list">Hazers Gonna Haze <br />(belchingbeaver)</li>
+                            <li class="list">Dry-hopped Pilsner</li>
+                            <li class="list">Cerveza guinness</li>
+                        </ul>
+                    </div>
+
+                    <div class="cta-btn bg-light text-blue mt-m mb-m">
+                        <a href="#">Todas las bebidas</a>
+                    </div>
+                </div>
+
+                <div class="card bg-light rounded-card m-small m-top p w-3 center">
+                    <h2 class="title-small pt-s">Dulces Tentaciones</h2>
+                    <span class="subtitle-small text-gray">Tartaletas, brownies, tiramisú</span>
+
+                    <div class="flex row p center pricing">
+                        <div class="number title-big">10</div>
+                        <div class=" flex column center from">
+                            <span class="text-gray bold">S/.</span>
+                            <span>Desde</span>
+                        </div>
+                    </div>
+
+                    <div class="elements">
+                        <ul class="text-center">
+                            <li class="list">Lemon Pie</li>
+                            <li class="list">Helado de crema</li>
+                            <li class="list">Turron</li>
+                            <li class="list">Picarones</li>
+                            <li class="list">Suspiros y más ...</li>
+                        </ul>
+                    </div>
+
+                    <div class="cta-btn bg-blue mt-m mb-m">
+                        <a href="#">Ir a snacks</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="propuesta mt-m mb-m" id="reservar">
+        <div class="container p center ">
+            <h1 class="title-regular">Reservas</h1>
+            <p class="subtitle mt-m mb-m">Es preferible reservar mesa en el restaurante Leña para evitarse sorpresas,
+                sobre todo en temporada alta.
+                Si lo que buscas es una incomparable experiencia y de diversión Barra Bar es el lugar perfecto para ti.
+            </p>
+            <div class="flex row ">
+                <div class="card bg-light w-3 rounded-card m-small p center">
+                    <h2 class="title-small">Reserva</h2>
+                    <form action="#" class="form flex col">
+                        <input type="text" class="ipt" placeholder="Tu nombre">
+                        <input type="text" class="ipt" placeholder="Correo">
+                        <textarea type="text" class="ipt" placeholder="Mensaje" rows="10" columns="70">
+                            </textarea>
+                    </form>
+                    <input type="submit" class="send-btn bg-blue mt-m mb-m" value="Enviar">
+
+                </div>
+                <div class="flex w-7 center-items">
+                    <div class="flex col">
+                        <div class="flex row">
+                            <div class="card col w-3 center-items">
+                                <div class="img-small">
+                                    <img src="img/ubicacion.png" alt="Ubicación">
+                                </div>
+                                <p class="pt-s">6386 Av. Siempre Viva, General
+                                    Miraflores 12473 Lima, Perú</p>
+                            </div>
+                            <div class="card col w-3 center-items">
+                                <div class="img-small">
+                                    <img src="img/phone.png" alt="Teléfono">
+                                </div>
+                                <p class="pt-s">(51) 987 654 321</p>
+                            </div>
+                            <div class="card col w-3 center-items">
+                                <div class="img-small">
+                                    <img src="img/mail.png" alt="Teléfono">
+                                </div>
+                                <p class="pt-s">contacto@barrabar.com.pe</p>
+                            </div>
+                        </div>
+                        <div class="flex center">
+                            <img src="img/mapa.png" alt="Ubicacion">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carta mt-m bg-light-blue">
+        <div class="container p center row">
+            <div class="flex  row">
+                <div class="flex col p elements">
+                    <h1 class="title-small">Secciones</h1>
+                    <ul class="text-center">
+                        <li class="list">Inicio</li>
+                        <li class="list">Reservar</li>
+                        <li class="list">Carta</li>
+                        <li class="list">Eventos</li>
+                        <li class="list">Nosotros</li>
+                    </ul>
+                </div>
+                <div class="flex col p elements">
+                    <h1 class="title-small">Promociones</h1>
+                    <ul class="text-center">
+                        <li class="list">Lemon Pie</li>
+                        <li class="list">Helado de crema</li>
+                        <li class="list">Turron</li>
+                        <li class="list">Picarones</li>
+                        <li class="list">Suspiros y más ...</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-3">
+                <div class="flex col p elements">
+
+                    <ul class="text-center">
+                        <li class="list center">
+                            <div class="img-small">
+                                <img src="img/ubicacion.png" alt="Ubicación">
+                            </div>
+                            6386 Av. Siempre Viva, General <br />
+                            Miraflores 12473 Lima, Perú
+                        </li>
+                        <li class="list center">
+                            <div class="img-small">
+                                <img src="img/phone.png" alt="Teléfono">
+                            </div>
+                            (51) 987 654 321
+                        </li>
+                        <li class="list"><img src="/img/fb.png" alt="Facebook: Burger Bar"></a></li>
+                        <li class="list">Copyright 2022 @barrabar.com.pe</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 </body>
 

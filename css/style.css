@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+.dev * {
+  border: 1px solid gold;
+}
 
 @font-face {
   font-family: "Graphik";
@@ -28,6 +31,10 @@ li {
 a {
   text-decoration: none;
 }
+
+form,
+li,
+ul,
 h1,
 h2,
 h3,
@@ -51,7 +58,6 @@ p {
 }
 .title-small {
   font-size: 20px;
-  color: #374754;
 }
 .title-regular {
   font-size: 43px;
@@ -59,6 +65,9 @@ p {
   position: relative;
   z-index: 10;
   color: #374754;
+}
+.bg-light-blue .title-regular {
+  color: white;
 }
 .subtitle {
   font-weight: regular;
@@ -70,6 +79,16 @@ p {
 .subtitle-small {
   font-size: 16px;
 }
+.title-big {
+  font-size: 74px;
+  font-weight: bold;
+}
+.bold {
+  font-weight: bold;
+}
+.text-center {
+  text-align: center;
+}
 
 /*
 * Espaciado   ------------------------------------------------------------------------------
@@ -77,6 +96,22 @@ p {
 .p {
   padding: 3rem;
 }
+.m {
+  margin: 3rem;
+}
+.m-small {
+  margin: 1rem;
+}
+.m-top {
+  margin-top: 6rem !important;
+}
+.pt-s {
+  padding-top: 1.5rem;
+}
+.pb-s {
+  padding-bottom: 1.5rem;
+}
+
 .mt-m {
   margin-top: 3rem;
 }
@@ -117,6 +152,10 @@ p {
 /*
 * Colores de fondo   ------------------------------------------------------------------------------
 */
+.bg-light {
+  background-color: #fff;
+  color: #374754;
+}
 .bg-dark {
   background-color: #0e0e0e;
   color: white;
@@ -129,6 +168,10 @@ p {
 }
 .bg-blue {
   background-color: #2091f9;
+  color: white;
+}
+.bg-light-blue {
+  background-color: #252b42;
 }
 .bg-secondary a,
 .bg-green a,
@@ -138,8 +181,13 @@ p {
 .text-gray {
   color: #374754;
 }
-.text-blue {
+
+.text-blue,
+.text-blue a {
   color: #2091f9;
+}
+.text-white {
+  color: white;
 }
 /*
 * Contenedores   ------------------------------------------------------------------------------
@@ -166,15 +214,25 @@ p {
 .w-25 {
   width: 25%;
 }
+.w-4 {
+  width: 40%;
+}
+.w-7 {
+  width: 60%;
+}
 
 /*
 * Botones   ------------------------------------------------------------------------------
 */
-.cta-btn {
+.cta-btn,
+.send-btn {
   border-radius: 35px;
   width: 250px;
 
   font-weight: bold;
+}
+.send-btn {
+  padding: 1rem;
 }
 .cta-btn a {
   text-align: center;
@@ -188,12 +246,27 @@ p {
 }
 
 /*
+* Formulario   ------------------------------------------------------------------------------
+*/
+.ipt {
+  padding: 1rem;
+  border: none;
+  border-radius: 30px;
+  background: #f5f5f5;
+  border: 1px solid #e8e8e8;
+  margin-top: 1rem;
+}
+
+/*
 * Card
 * ------------------------------------------------------------------------------
 */
 
 .card {
   display: flex;
+}
+.rounded-card {
+  border-radius: 10px;
 }
 .card-img {
   width: 150px;
@@ -373,3 +446,16 @@ p {
 * Seccion propuesta
 * ------------------------------------------------------------------------------
 */
+.elements .list {
+  padding: 12px 0 0 0;
+}
+
+/*
+* Seccion Reservas
+* ------------------------------------------------------------------------------
+*/
+.img-small {
+  width: 100px;
+  height: 50px;
+  text-align: center;
+}
